@@ -1,6 +1,6 @@
 #home {
   padding-top: 50px;
-  height: 800px;
+  height: 900px;
   background-image: url(http://i.imgur.com/YzxF5iP.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -51,7 +51,7 @@
 .jumbotron-0 {
   font-family: Lobster;
   font-size: 80px;
-  padding-top: 100px;
+  padding-top: 140px;
   color: #696969;
 }
 
