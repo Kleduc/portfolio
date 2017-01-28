@@ -1,47 +1,190 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="./style.css">
-<script src="./node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
 
-<title>Portfolio Bootstrap Test</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <script src="./node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+
+  <title>Portfolio Bootstrap Test</title>
+
+  <style>
+    @media (max-width: 732px) {
+      #home {
+        height: 550px;
+      }
+      .jumbotron-0 {
+        font-size: 40px;
+        padding-top: 5px;
+        padding-right: 150px;
+      }
+    }
+  </style>
 
 </head>
-<body class="body-home">
 <!-- Navbar -->
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header navbar-nav">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header navbar-nav">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><p><span class="glyphicon glyphicon-home"></span>Portfolio</p>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right navbar-nav-1">
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+      <a class="navbar-brand" href="#home">
+        <p><span class="glyphicon glyphicon-home"></span>Portfolio</p>
+      </a>
     </div>
-  </nav>
-<!-- Header -->
-  <div class="jumbotron jumbotron-fluid jumbotron-1">
-    <div class="container">
-      <h1 class="display-3 head-prop">Hey everyone! Take a look around.</h1>
-      <hr>
-      <p class="lead para-prop">Aspiring Web Developer. Lifelong Learner. Soccer Fanatic. Cat Lover.</p>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </div>
   </div>
+</nav>
+
+
+<div class="tab-content">
+
+  <section id="home">
+    <div class="jumbotron jumbotron-fluid jumbotron-1">
+      <div class="container">
+        <h1 class="display-3 head-prop">Hey everyone! Take a look around.</h1>
+        <hr>
+        <p class="lead para-prop">Aspiring Web Developer. Lifelong Learner. Soccer Fanatic. Cat Lover.</p>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="display-3 jumbotron-0">Learn something new.</h1>
+    </div>
+</div>
+</section>
+
+
+
+<section id="about">
+  <div class="jumbotron jumbotron-fluid jumbotron-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <h1 class="display-3 head-prop">Who I Am</h1>
+          <hr>
+          <p class="lead para-prop">I love being creative, but I have so much to learn. Web development has opened the door to letting me express myself.</p>
+        </div>
+        <div class="col-sm-2 visible-lg">
+          <i class="fa fa-coffee" style="font-size: 150px;" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="well well-lg well-prop">
+    <div class="container">
+      <p>I am a Research Specialist by day and a Web Developer by night. Currently, I have accumulated three years of front-end knowledge and I am looking to expand my skills to full stack. I'm also trying to improve on my eye for design. I've always loved
+        working with computers and it blew me away when I discovered that there is so much you can do with prorgramming. It's my goal to explore this and so far I am having a blast!</p><br>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="jumbotron jumbotron-fluid jumbotron-3">
+    <div class="container">
+      <h1 class="display-3 head-prop">Projects</h1>
+      <hr>
+      <p class="lead para-prop">Below is what I've worked on so far. These fun projects have me focusing on functionality, layout, and mobile ready design.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class=" col-sm-4">
+        <div class="well well-lg well-prop well-prop">
+          <p>I've really enjoyed learning front end development. Here are my current strengths, check it out!</p>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+            HTML
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+            CSS
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+            Bootstrap
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+            JavaScript
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width:7%">
+            AWS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-info">
+          <div class="panel-heading well-prop"><a href="https://tribute-c075f.firebaseapp.com/">Tribute Page</a>
+          </div>
+          <div class="panel-body panel-prop">The link above is to my Tribute Page on Rosalind Franklin. The style is similar to my portfolio. I used a combination of HTML/CSS/Bootstrap. Also, I really enjoy the simplicity of hosting with Firebase.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-info">
+          <div class="panel-heading well-prop"><a href="https://www.khanacademy.org/computer-programming/sprinkles/6615499069718528">Ice Cream Sprinkles</a></div>
+          <div class="panel-body panel-prop">This project was a collaboration with my significant other. It was created through Khan Academy and it was a very fun project. I can't wait to dive into more JavaScript!</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-info">
+          <div class="panel-heading well-prop">Coming Soon</div>
+          <div class="panel-body panel-prop">My next projects from Free Code Camp will be in the works shortly. I can't wait!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="jumbotron jumbotron-fluid jumbotron-4">
+    <div class="container">
+      <h1 class="display-3 head-prop">Contact Me</h1>
+      <hr>
+      <p class="lead para-prop">I'm always wanting to improve. Please let me know how I'm doing. I would love to hear from you!</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <center>
+        <div class="col-sm-4"><i class="fa fa-linkedin" style="font-size: 200px;" aria-hidden="true"></i></div>
+        <div class="col-sm-4"><i class="fa fa-github" style="font-size: 200px;" aria-hidden="true"></i></div>
+        <div class="col-sm-4"><i class="fa fa-codepen" style="font-size: 200px;" aria-hidden="true"></i></div>
+      </center>
+    </div>
+  </div>
+</section>
+</div>
 </body>
+
 </html>
